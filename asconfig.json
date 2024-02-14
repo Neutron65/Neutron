@@ -1,23 +1,9 @@
+Python 3.10.0 (v3.10.0:b494f5935c, Oct  4 2021, 14:59:19) [Clang 12.0.5 (clang-1205.0.22.11)] on darwin
+Type "help", "copyright", "credits" or "license()" for more information.
 {
-  "extends": "./node_modules/@assemblyscript/wasi-shim/asconfig.json",
-  "targets": {
-    "debug": {
-      "outFile": "build/debug.wasm",
-      "textFile": "build/debug.wat",
-      "sourceMap": true,
-      "debug": true
-    },
-    "release": {
-      "outFile": "build/release.wasm",
-      "textFile": "build/release.wat",
-      "sourceMap": true,
-      "optimizeLevel": 3,
-      "shrinkLevel": 0,
-      "converge": false,
-      "noAssert": false
-    }
-  },
-  "options": {
-    "bindings": "esm"
+  "name": "noone-function",
+  "include": ["index.ts"],
+  "binaryen": {
+    "unsafe": true
   }
 }
