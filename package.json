@@ -1,16 +1,17 @@
+Python 3.10.0 (v3.10.0:b494f5935c, Oct  4 2021, 14:59:19) [Clang 12.0.5 (clang-1205.0.22.11)] on darwin
+Type "help", "copyright", "credits" or "license()" for more information.
 {
-  "name": "hello-world",
+  "name": "noone-function",
   "version": "1.0.0",
+  "description": "A simple Blockless function for demonstration purposes.",
   "main": "index.js",
-  "license": "APACHE-2.0",
   "scripts": {
-    "clean": "rm -rf build",
-    "build:release": "npm run clean; asc index.ts --target release",
-    "build:debug": "npm run clean; asc index.ts --target debug"
+    "build:debug": "tsc",
+    "build:release": "tsc -p tsconfig.release.json"
   },
-  "dependencies": {
-    "@blockless/sdk": "^1.1.0",
-    "as-wasi": "^0.6.0",
-    "assemblyscript": "^0.25.0"
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.5.4"
   }
 }
